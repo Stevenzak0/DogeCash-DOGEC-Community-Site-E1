@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+
+<link crossorigin="" href="https://api.coingecko.com" rel="preconnect"/>
+<link href="https://api.coingecko.com" rel="dns-prefetch"/>
+<meta charset="utf-8"/><meta content="no-referrer" name="referrer"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+<meta content="telephone=no" name="format-detection"/>
+<title>
+    DOGECASH — The Underdog Returns
+   </title>
+<meta content="Dogecash relaunch: downloads, exchanges, live markets, learn tabs, developer docs, specs, and timeline." name="description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="DOGECASH — The Underdog Returns" name="twitter:title"/>
+<meta content="Native blockchain coin • community-first relaunch with transparent governance." name="twitter:description">
+<meta content="https://dogecash.io/og.png" name="twitter:image"/>
+<meta content="#0b1220" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="dark light" name="color-scheme">
+<link crossorigin="anonymous" href="site.webmanifest" rel="manifest"/>
+<meta content="DogeCash" name="apple-mobile-web-app-title"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<link fetchpriority="high" href="assets/DogeCashLogoFlat.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/DogeCashLogoFlat.png" rel="apple-touch-icon"/>
+<link crossorigin="anonymous" href="https://dogecash.io/" rel="canonical"/>
+<meta content="index,follow, max-image-preview:large" name="robots"/>
+<meta content="https://api.coingecko.com" rel="dns-prefetch"/>
+<link as="document" href="DogeCash_WhitePaper.pdf" rel="prefetch" type="application/pdf"/>
+
+
+
+<meta content="camera=(), microphone=(), geolocation=(), usb=(), payment=(), serial=()" name="permissions-policy"/>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+:root {
+  --bg: #0b1220;
+  --bg-soft: #111a33;
+  --text: #e6eef6;
+  --muted: #a9b4c6;
+  --accent: #ffb86b;
+  --accent-2: #6bdcff;
+  --card: rgba(255,255,255,.03);
+  --border: rgba(0,0,0,0.1);
+  --shadow: 0 4px 10px rgba(0,0,0,0.08);
+  --good: #19c37d;
+  --bad: #ff6b6b;
+  --on-accent: #10131a;
+  --focus: 2px solid #1b67ff;
+  --win-accent: var(--accent, #1b67ff);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-xl: 20px;
+  --mac-glass-bg-dark: rgba(20,20,20,0.6);
+  --mac-glass-bg-light: rgba(255,255,255,0.55);
+  --mac-radius-xl: var(--radius-xl);
+  --mac-radius-md: var(--radius-md);
+  --mac-shadow: 0 4px 20px rgba(0,0,0,0.12),0 1px 3px rgba(0,0,0,0.04);
+  --mac-glass-bg: rgba(255,255,255,0.55);
+  --mac-dark-bg: rgba(20,20,20,0.6);
+  --mac-glow: 0 0 16px rgba(255,255,255,0.15);
+  --mac-radius: var(--radius-lg);
+  --mac-shadow-xl: 0 12px 28px rgba(0,0,0,.2);
+  --radius: var(--radius-lg);
+  --font-sans: "Cantarell",system-ui,sans-serif;
+  --radius-sm: 6px;
+  --backdrop: blur(16px) saturate(160%);
+  --shadow-unified: 0 6px 18px rgba(0,0,0,.25);
+}
+
+
+
+       :root.light{--bg:#f4f7ff;--bg-soft:#ffffff;--text:#0a1326;--muted:#3b4a61;--accent:#1b67ff;--accent-2:#2f7dff;--card:#ffffff;--border:#b7c6ff;--shadow:0 8px 22px rgba(27,103,255,.12);--good:#0b7a53;--bad:#b23838;--on-accent:#ffffff;}@media (prefers-contrast:more){.btn-ghost,.tabbtn,.badge{border-width:2px}}*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:2px}.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:99999;box-shadow:0 0 12px rgba(0,0,0,.35);}.topbar{position:sticky;top:0;z-index:9999;backdrop-filter:saturate(140%) blur(10px);background:rgba(11,18,32,.55);border-bottom:1px solid rgba(255,255,255,.06);}:root.light .topbar{background:rgba(255,255,255,.65);border-bottom:1px solid var(--border);}nav{max-width:1100px;margin:auto;padding:10px 20px;display:flex;align-items:center;gap:14px;}.brand-mark{height:64px;width:64px;border-radius:14px;box-shadow:var(--shadow);background:#0b1220;transition:transform 1s ease;}.nav-links{margin-left:auto;display:flex;gap:10px;align-items:center}.nav-links a{padding:8px 10px;border-radius:10px}.nav-links a:hover{background:rgba(255,255,255,.06)}.cta{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:var(--on-accent);font-weight:800;border:0;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;}.cta:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(0,0,0,.35)}.hamburger{display:none;background:transparent;border:1px solid var(--border);border-radius:10px;padding:8px 10px;color:var(--text)}@media (max-width:900px){.nav-links{display:none}.hamburger{display:inline-flex;margin-left:auto}}.header-wrap{position:relative;overflow:hidden;background:linear-gradient(-45deg,#6bdcff,#ffb86b,#0d1326,#0b1220);background-size:400% 400%;animation:gradientShift 15s ease infinite;border-bottom:none;}.header-wrap::after{content:"";position:absolute;inset:-20% -10%;background:radial-gradient(60rem 30rem at 15% 10%,rgba(107,220,255,.18),transparent 60%),radial-gradient(40rem 22rem at 85% 20%,rgba(255,184,107,.18),transparent 60%),radial-gradient(30rem 18rem at 60% 80%,rgba(27,103,255,.14),transparent 60%);mix-blend-mode:screen;pointer-events:none;z-index:0;filter:blur(2px);}@keyframes gradientShift{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}header{max-width:1100px;margin:auto;padding:28px 20px;display:flex;align-items:center;gap:18px;position:relative;z-index:1;backdrop-filter:blur(10px);background-color:rgba(11,18,32,0.45);border-radius:0 0 16px 16px;transition:background-color .3s ease;}:root.light header{background-color:rgba(255,255,255,0.65);}.branding h1{margin:0 0 6px 0;letter-spacing:.2px}.branding p{margin:0;color:var(--muted)}.header-actions{margin-left:auto;display:flex;gap:12px;align-items:center;flex-wrap:wrap}.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.04)}:root.light .badge{background:rgba(27,103,255,.08);border-color:var(--border);}.theme-toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:999px;padding:6px 10px;background:var(--card);cursor:pointer}.theme-toggle input{accent-color:var(--accent)}main,footer{max-width:1100px;margin:auto;padding:20px}.card{background:var(--card);border:1px solid var(--border);padding:18px;margin:16px 0;box-shadow:var(--shadow);transition:transform .2s ease,border-color .2s ease;}.card:hover{transform:scale(1.01);border-color:var(--accent);}h2{margin:0 0 12px 0}.muted{color:var(--muted)}.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:var(--on-accent);font-weight:700;border:1px solid transparent;transition:transform .2s,box-shadow .2s;}.btn:hover,.btn:focus-visible{box-shadow:0 0 12px rgba(255,184,107,.6);transform:translateY(-1px);}.btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.btn-ghost{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text)}.btn-ghost:hover,.btn-ghost:focus-visible{background:rgba(27,103,255,.12);border-color:var(--accent);}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}@media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}.kv{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}.kv .pill{background:rgba(255,255,255,.04);border:1px solid var(--border);padding:10px 12px;border-radius:10px;min-width:160px}:root.light .kv .pill{background:#f7f9ff;border-color:var(--border);}.good{color:var(--good)}.bad{color:var(--bad)}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:10px;border-bottom:1px solid var(--border);text-align:left}:root.light .table tbody tr:nth-child(odd){background:#f6f9ff;}.img-frame{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#0f1626;box-shadow:var(--shadow)}:root.light .img-frame{background:#e7efff}.img-frame img{display:block;width:100%;height:auto;transition:transform .5s ease;}.img-frame:hover img{transform:scale(1.03);}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}.tabbtn{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.04);cursor:pointer}:root.light .tabbtn{background:#f7f9ff;}.tabbtn.active{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:var(--on-accent);border-color:transparent;transform:scale(1.05);box-shadow:0 0 10px rgba(27,103,255,0.3);}.panel{display:none;opacity:0;transform:translateY(10px);transition:opacity .3s ease,transform .3s ease;}.panel.active{display:block;opacity:1;transform:translateY(0);}.notice{font-size:.9rem;padding:10px;border:1px dashed var(--border);border-radius:10px}:root.light .notice{background:#f6f9ff;}footer{color:var(--muted);text-align:center;padding-bottom:40px}.tiny{height:18px;width:18px;vertical-align:-3px;border-radius:4px}.blog-list .post{border-left:3px solid var(--accent);padding-left:10px;margin:12px 0}.blog-list .post time{display:block;color:var(--muted);font-size:.9rem}.trust-badge{display:inline-block;font-size:.8rem;padding:.1rem .5rem;border-radius:.5rem;border:1px solid var(--border)}.trust-badge.green{background:rgba(25,195,125,.12)}.trust-badge.yellow{background:rgba(255,184,107,.12)}.trust-badge.red{background:rgba(255,107,107,.12)}.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}:focus-visible{outline:var(--focus);outline-offset:2px;}.tabbtn:focus-visible,.btn:focus-visible,.theme-toggle:focus-visible{box-shadow:0 0 0 3px rgba(27,103,255,.45);}@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;scroll-behavior:auto !important;}html{scroll-behavior:auto;}}.whitepaper-frame{border:1px solid var(--border);border-radius:10px;}.api-status{margin-top:8px;font-size:.9rem;color:var(--muted);}.api-status.bad{color:var(--bad);}.copied{box-shadow: inset 0 0 0 2px var(--good); border-radius:6px; background-image: linear-gradient(rgba(25,195,125,.12), rgba(25,195,125,.12));}#share .btn-ghost{display:inline-flex;align-items:center;gap:8px;transition:color .2s,border-color .2s,background-color .2s;}#share svg{width:18px;height:18px;flex:0 0 18px;display:inline-block;}#share .share-row{display:flex;flex-wrap:wrap;gap:8px;}#share #share-facebook:hover,#share #share-facebook:focus-visible{color:#1877F2;border-color:currentColor;background-color:rgba(24,119,242,.10);}#share #share-twitter:hover,#share #share-twitter:focus-visible{color:#1D9BF0;border-color:currentColor;background-color:rgba(29,155,240,.12);}#share #share-instagram:hover,#share #share-instagram:focus-visible{color:#E4405F;border-color:currentColor;background-color:rgba(228,64,95,.12);}#share #share-tiktok:hover,#share #share-tiktok:focus-visible{color:#FE2C55;border-color:currentColor;background-color:rgba(254,44,85,.12);}#share #share-telegram:hover,#share #share-telegram:focus-visible{color:#26A5E4;border-color:currentColor;background-color:rgba(38,165,228,.12);}#share #share-whatsapp:hover,#share #share-whatsapp:focus-visible{color:#25D366;border-color:currentColor;background-color:rgba(37,211,102,.12);}.gs-steps{padding-left:18px;}.gs-steps > li{margin:10px 0;}.gs-steps h3{margin:0 0 6px 0;}pre{background:var(--bg-soft);border:1px solid var(--border);border-radius:8px;padding:8px;overflow:auto;}.tutorial-card{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg-soft)}.tutorial-card .ph{display:block;width:100%;height:auto}.tutorial-card .bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px;background:var(--card);border-top:1px solid var(--border)}.tutorial-card .btn-mini{padding:8px 12px;border-radius:8px;background:var(--accent);color:var(--on-accent);font-weight:700;border:0;cursor:pointer}.meme-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}.meme-grid .m{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg-soft);cursor:pointer;}.meme-grid img{display:block;width:100%;height:auto;}.meme-lightbox{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;padding:20px;z-index:9999;}.meme-lightbox.open{display:flex;animation:popIn .3s ease-out;}.meme-lightbox img{max-width:92vw;max-height:88vh;border-radius:12px;}@keyframes popIn{from{opacity:0;transform:scale(0.95);}to{opacity:1;transform:scale(1);}}@keyframes spinOnce{from{transform:rotateY(0deg);}to{transform:rotateY(360deg);}}#logoImg.spin-once{animation:spinOnce 1s ease;}a.cta[href*="discord"]{background:linear-gradient(90deg,#7289DA,#5865F2);color:#fff;}:target::before{content:"";display:block;height:90px;margin-top:-90px;visibility:hidden;}section{scroll-margin-top:96px;}@media (prefers-contrast:more){.btn-ghost,.tabbtn,.badge{border-width:2px}}html,body{transition:background .4s ease,color .4s ease;}.topbar{border-radius:0 0 var(--radius-xl) var(--radius-xl);backdrop-filter:saturate(160%) blur(16px);background:rgba(11,18,32,.45);}:root.light .topbar{background:rgba(255,255,255,.55);}header{backdrop-filter:blur(16px) saturate(160%);border-radius:0 0 var(--radius-xl) var(--radius-xl);transition:background-color .3s ease,backdrop-filter .3s ease;}.card{background:rgba(255,255,255,0.07);backdrop-filter:blur(20px) saturate(160%);box-shadow:var(--shadow);transition:transform .2s ease,border-color .2s ease,background .3s ease,backdrop-filter .3s ease;}:root.light .card{background:rgba(255,255,255,.65);}.card:hover{transform:translateY(-1px);border-color:var(--win-accent);}.btn,.btn-ghost,.tabbtn,.pill,.nav-links a{border-radius:var(--radius-md);}.btn:hover,.btn:focus-visible{transform:translateY(-1px) scale(1.02);filter:brightness(1.05);}.btn-ghost:hover,.btn-ghost:focus-visible{background:rgba(27,103,255,.08);border-color:var(--win-accent);transform:scale(1.02);}.tabbtn.active{position:relative;}.tabbtn.active::after{content:"";position:absolute;left:10%;right:10%;bottom:-4px;height:3px;border-radius:2px;background:var(--win-accent);animation:tabUnder .25s ease;}@keyframes tabUnder{from{opacity:0;transform:scaleX(0);}to{opacity:1;transform:scaleX(1);}}a.cta[href*="discord"]{background:linear-gradient(90deg,#7289DA,#5865F2);color:#fff;}.topbar,header,.card,.img-frame,.tabbtn,.btn,.btn-ghost,.badge{border-radius:var(--mac-radius-md) !important;backdrop-filter:blur(28px) saturate(160%) !important;box-shadow:var(--mac-shadow);transition:all 0.3s ease-in-out;}header,.topbar{border-radius:0 0 var(--mac-radius-xl) var(--mac-radius-xl) !important;}.card:hover{transform:scale(1.015);background:rgba(255,255,255,0.07);}.btn:hover,.tabbtn:hover{transform:scale(1.03);filter:brightness(1.1);}.card,header,.topbar,.tabbtn,.btn,.btn-ghost,.img-frame{border-radius:var(--mac-radius);box-shadow:var(--mac-shadow-xl);backdrop-filter:blur(30px) saturate(180%);border:1px solid rgba(255,255,255,0.14);transition:all 0.3s ease-in-out;}.topbar{background:var(--mac-dark-bg);border-bottom:1px solid rgba(255,255,255,0.08);}.card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 14px 36px rgba(0,0,0,0.3);}.btn,.btn-ghost{padding:12px 18px;font-weight:600;font-size:1rem;}.btn:hover,.btn-ghost:hover{transform:scale(1.04);filter:brightness(1.1);}.tabbtn.active::after{content:"";position:absolute;bottom:-6px;left:12%;width:76%;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:var(--mac-glow);}.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease-out,transform 0.6s ease-out;}.fade-in.visible{opacity:1;transform:translateY(0);}.section-title{font-size:2rem;font-weight:700;margin-bottom:16px;}.scroll-reveal{will-change:opacity,transform;}.btn:focus-visible,.tabbtn:focus-visible{box-shadow:0 0 0 3px rgba(107,220,255,0.4);}.copy-feedback{position:absolute;top:-28px;right:0;background:#19c37d;color:#fff;padding:4px 10px;font-size:0.8rem;border-radius:6px;opacity:0;transform:translateY(10px);transition:opacity 0.3s ease,transform 0.3s ease;pointer-events:none;}.copy-feedback.show{opacity:1;transform:translateY(0);}:root.light .tabbtn.active,:root.light .tabbtn.active *,:root.light #learn .panel.active,:root.light #learn .panel.active *,:root.light #learn .panel *,:root.light .tabbtn *,:root.light .tabbtn{color:#000000 !important;-webkit-text-fill-color:#000000 !important;text-shadow:none !important;}.input-wrap{position:relative;display:inline-flex;align-items:center;}.input-wrap input{padding-right:64px;}.input-wrap::after{content:attr(data-suffix);position:absolute;right:12px;font-weight:600;opacity:.75;pointer-events:none;}input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}input[type=number]{-moz-appearance:textfield;}.input-wrap{display:inline-flex;align-items:center;border:1px solid var(--border);border-radius:6px;background:var(--card);overflow:hidden;padding:0;box-shadow:var(--shadow);transition:box-shadow 0.2s ease,border-color 0.2s ease;}.input-wrap:hover{border-color:var(--accent);box-shadow:0 0 0 2px rgba(107,220,255,0.25);}.input-wrap select,.input-wrap input{border:none;background:transparent;padding:12px 16px;font-size:1rem;outline:none;appearance:none;color:var(--text);}.input-wrap select{min-width:100px;border-right:none;background-image:url("data:image/svg+xml;utf8,<svg aria-hidden="true" fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");background-repeat:no-repeat;background-position:right 10px center;background-size:12px;padding-right:28px;cursor:pointer;}.input-wrap input{flex:1;min-width:160px;}.input-wrap:focus-within{outline:2px solid var(--accent);outline-offset:2px;}#convert .input-wrap{border-radius:0 !important;box-shadow:none !important;}#convert .input-wrap:focus-within{outline:none !important;}#convert select,#convert input{border-radius:0 !important;outline:none !important;box-shadow:none !important;}#convert .input-wrap:hover{border-color:var(--border) !important;box-shadow:none !important;}html,body{font-family:var(--font-sans);}.card,header,.topbar,.tabbtn,.btn,.btn-ghost,.img-frame{border-radius:var(--radius) !important;box-shadow:var(--shadow) !important;border:1px solid var(--border) !important;}.btn,.tabbtn{font-weight:600;transition:background 0.3s ease;}.btn:hover,.tabbtn:hover{}.tabbtn.active::after{content:"";position:absolute;bottom:-4px;left:15%;width:70%;height:2px;border-radius:1px;}.theme-toggle,.badge{border-radius:var(--radius);border:1px solid var(--border);}input,select{font-family:var(--font-sans);}@media (max-width:900px){.hamburger{background:var(--accent);color:var(--on-accent);font-weight:bold;}}.table-container{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}@media (max-width:900px){#marketsTable th,#marketsTable td{white-space:nowrap;}#marketsTable{font-size:0.9rem;}}::-webkit-scrollbar{width:12px;height:12px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{border-radius:10px;background-clip:content-box;border:2px solid transparent;background:linear-gradient(var(--accent),var(--accent-2));}::-webkit-scrollbar-thumb:hover{filter:brightness(1.05);}
+      
+</style>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">#shaTable td{position:relative;}
+</style>
+<!-- CSS END -->
+
+<meta content="dogecash, crypto, wallet, blockchain, staking, masternode" name="keywords"/>
+<meta content="DogeCash Community" name="author"/>
+<link href="/sitemap.xml" rel="sitemap" type="application/xml"/>
+<link href="/feed.xml" rel="alternate" title="DogeCash Blog" type="application/rss+xml"/>
+<meta content="en" http-equiv="Content-Language"/>
+<link crossorigin="anonymous" href="https://dogecash.dogecash.io/" hreflang="en" rel="alternate"/>
+<link crossorigin="anonymous" href="//www.facebook.com" rel="dns-prefetch"/>
+<link crossorigin="anonymous" href="//x.com" rel="dns-prefetch">
+<link crossorigin="anonymous" href="//twitter.com" rel="dns-prefetch">
+<link crossorigin="anonymous" href="//www.instagram.com" rel="dns-prefetch"/>
+<link crossorigin="anonymous" href="//t.me" rel="dns-prefetch"/>
+<link crossorigin="anonymous" href="//wa.me" rel="dns-prefetch"/>
+<link href="assets/js/main.js" rel="modulepreload"/>
+<meta content="#0b1220" name="msapplication-TileColor"/>
+
+<meta content="geolocation=(), microphone=(), camera=()" http-equiv="Permissions-Policy"/>
+<link crossorigin="" href="https://coinmarketcap.com" rel="preconnect"/>
+<link href="https://coinmarketcap.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://discord.gg" rel="preconnect"/>
+<link href="https://discord.gg" rel="dns-prefetch"/>
+<link crossorigin="" href="https://dogecash.io" rel="preconnect"/>
+<link href="https://dogecash.io" rel="dns-prefetch"/>
+<link crossorigin="" href="https://dogecash.net" rel="preconnect"/>
+<link href="https://dogecash.net" rel="dns-prefetch"/>
+<link crossorigin="" href="https://github.com" rel="preconnect">
+<link href="https://github.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://instagram.com" rel="preconnect"/>
+<link href="https://instagram.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://stakecube.net" rel="preconnect"/>
+<link href="https://stakecube.net" rel="dns-prefetch"/>
+<link crossorigin="" href="https://t.me" rel="preconnect"/>
+<link href="https://t.me" rel="dns-prefetch"/>
+<link crossorigin="" href="https://twitter.com" rel="preconnect"/>
+<link href="https://twitter.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://wa.me" rel="preconnect"/>
+<link href="https://wa.me" rel="dns-prefetch"/>
+<link crossorigin="" href="https://www.coingecko.com" rel="preconnect"/>
+<link href="https://www.coingecko.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://www.facebook.com" rel="preconnect"/>
+<link href="https://www.facebook.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://www.instagram.com" rel="preconnect"/>
+<link href="https://www.instagram.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://www.tiktok.com" rel="preconnect"/>
+<link href="https://www.tiktok.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://x.com" rel="preconnect"/>
+<link href="https://x.com" rel="dns-prefetch"/>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+
+/* 1) Prevent ugly page-level horizontal scrollbar from tiny layout leaks */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 2) Where to Trade DOGEC (Live) — mobile scrollbar polish + momentum */
+.table-container {
+  -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+}
+@media (max-width: 900px) {
+  /* compact, rounded horizontal scrollbar just for this container on mobile */
+  .table-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  .table-container::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.08);
+  }
+  .table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    border-radius: 999px;
+    border: 2px solid rgba(0,0,0,0.08);
+  }
+  .table-container::-webkit-scrollbar-thumb:hover {
+    filter: brightness(1.05);
+  }
+}
+
+/* 3) Download DogeCash Wallet — ensure all text (incl. SHA256) wraps within the card */
+#download .grid-2 > div { min-width: 0; } /* allow columns to shrink without forcing overflow */
+#shaTable {
+  width: 100%;
+  table-layout: fixed;       /* keeps columns inside container width */
+}
+#shaTable th, #shaTable td {
+  white-space: normal;       /* let content wrap */
+  word-break: break-word;
+  overflow-wrap: anywhere;   /* long filenames wrap */
+}
+#shaTable td:nth-child(2),
+#shaTable td.sha, #shaTable td.hash, .sha256, .checksum, .hash {
+  word-break: break-all;     /* long hash strings wrap cleanly */
+  overflow-wrap: anywhere;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Safety: ensure the details summary's contents don't push layout on small screens */
+#download details { overflow: hidden; }
+#download details > * { max-width: 100%; }
+       
+</style>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+/* === Fixed topbar on ALL devices (logo + menu always visible) === */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
+}
+body.has-fixed-topbar {
+  padding-top: var(--topbar-h, 72px); /* prevent content being hidden under bar */
+}
+       
+</style><!-- STYLE:END style.css -->
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+/* --- Visual Accessibility & Micro-Interactions --- */
+
+/* Larger touch targets on mobile */
+@media (max-width: 768px) {
+  .btn, .btn-ghost {
+    min-height: 44px;        /* WCAG touch target */
+    min-width: 44px;
+    padding: 12px 18px;
+  }
+  .tabbtn {
+    min-height: 48px;
+    padding: 12px 16px;
+  }
+}
+
+/* Enhanced focus visibility (keyboard users) */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(107,220,255,0.2);
+  border-radius: 4px;
+}
+.btn:focus-visible, .btn-ghost:focus-visible, .tabbtn:focus-visible {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 0 3px var(--accent),
+    0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Button ripple (subtle, performant) */
+.btn, .btn-ghost {
+  position: relative;
+  overflow: hidden;
+}
+.btn::before, .btn-ghost::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  background: rgba(255,255,255,0.12);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.28s ease, height 0.28s ease;
+  pointer-events: none;
+}
+.btn:active::before, .btn-ghost:active::before {
+  width: 280px; height: 280px;
+}
+
+/* 24h change trend coloring (styling only) */
+.pill[data-trend="up"] {
+  background: linear-gradient(135deg, rgba(25,195,125,.15), rgba(25,195,125,.05));
+  border-color: var(--good);
+}
+.pill[data-trend="down"] {
+  background: linear-gradient(135deg, rgba(255,107,107,.15), rgba(255,107,107,.05));
+  border-color: var(--bad);
+}
+
+</style>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+
+
+/* Authoritative, low-risk component baselines (slightly higher specificity; no !important) */
+html body .topbar{ border-radius: 0 0 var(--radius-xl) var(--radius-xl); backdrop-filter: var(--backdrop); }
+html body #main .card{  backdrop-filter: var(--backdrop); }
+html body #main .img-frame{ border-radius: var(--radius-md); backdrop-filter: var(--backdrop); }
+html body #main .btn,
+html body #main .btn-ghost,
+html body #main .tabbtn,
+html body #main .badge{ border-radius: var(--radius-md); }
+
+/* Converter stays flat (no cascade wars) */
+html body #convert .input-wrap{ border-radius: 0; box-shadow: none; }
+html body #convert select,
+html body #convert input{ border-radius: 0; outline: none; box-shadow: none; }
+
+/* Preserve enhancements from SAFE STEP 4 */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(107,220,255,0.2);
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .btn, .btn-ghost { min-height: 44px; min-width: 44px; padding: 12px 18px; }
+  .tabbtn { min-height: 48px; padding: 12px 16px; }
+}
+.btn, .btn-ghost{ position: relative; overflow: hidden; }
+.btn::before, .btn-ghost::before{
+  content:''; position:absolute; top:50%; left:50%;
+  width:0; height:0; background: rgba(255,255,255,0.12);
+  border-radius:50%; transform:translate(-50%,-50%);
+  transition: width .28s ease, height .28s ease; pointer-events:none;
+}
+.btn:active::before, .btn-ghost:active::before{ width:280px; height:280px; }
+
+/* Trend pill color polish (leave existing intact; reinforce here) */
+.pill[data-trend="up"]{ border-color: var(--good); }
+.pill[data-trend="down"]{ border-color: var(--bad); }
+
+/* Next-gen responsive: container query (ignored if unsupported) */
+@container card (min-width: 300px) {
+  .btn-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+}
+
+</style>
+</link></link></link></meta></meta></meta>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+/* === FIXES (mobile market scrollbar, ugly horizontal page bar, download section overflow) === */
+html, body { overflow-x: hidden; }
+.table-container { -webkit-overflow-scrolling: touch; }
+@media (max-width: 900px) {
+  .table-container::-webkit-scrollbar { height: 8px; }
+  .table-container::-webkit-scrollbar-track { background: rgba(0,0,0,0.08); }
+  .table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    border-radius: 999px; border: 2px solid rgba(0,0,0,0.08);
+  }
+  .table-container::-webkit-scrollbar-thumb:hover { filter: brightness(1.05); }
+}
+#download .grid-2 > div { min-width: 0; }
+#shaTable { width: 100%; table-layout: fixed; }
+#shaTable th, #shaTable td { white-space: normal; word-break: break-word; overflow-wrap: anywhere; }
+#shaTable td:nth-child(2), #shaTable td.sha, #shaTable td.hash, .sha256, .checksum, .hash {
+  word-break: break-all; overflow-wrap: anywhere;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+#download details { overflow: hidden; }
+#download details > * { max-width: 100%; }
+</style>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+/* === Fixed topbar on ALL devices (logo + menu always visible) === */
+.topbar { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 10000; }
+body.has-fixed-topbar { padding-top: var(--topbar-h, 72px); }
+</style>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+/* --- Visual Accessibility & Micro-Interactions --- */
+@media (max-width: 768px) {
+  .btn, .btn-ghost { min-height: 44px; min-width: 44px; padding: 12px 18px; }
+  .tabbtn { min-height: 48px; padding: 12px 16px; }
+}
+:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(107,220,255,0.2); border-radius: 4px;
+}
+.btn:focus-visible, .btn-ghost:focus-visible, .tabbtn:focus-visible {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px var(--accent), 0 4px 12px rgba(0,0,0,0.2);
+}
+.btn, .btn-ghost { position: relative; overflow: hidden; }
+.btn::before, .btn-ghost::before {
+  content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0;
+  background: rgba(255,255,255,0.12); border-radius: 50%;
+  transform: translate(-50%, -50%); transition: width 0.28s ease, height 0.28s ease; pointer-events: none;
+}
+.btn:active::before, .btn-ghost:active::before { width: 280px; height: 280px; }
+.pill[data-trend="up"] { background: linear-gradient(135deg, rgba(25,195,125,.15), rgba(25,195,125,.05)); border-color: var(--good); }
+.pill[data-trend="down"] { background: linear-gradient(135deg, rgba(255,107,107,.15), rgba(255,107,107,.05)); border-color: var(--bad); }
+</style>
+<style nonce="351bb3f9623a7babf1c6eef50858a062">
+/* === DOGECASH UNIFIED PRODUCTION SYSTEM (safe, additive) === */
+:root{ --radius-sm:6px; --radius-md:12px; --radius-lg:18px; --radius-xl:20px; --backdrop: blur(16px) saturate(160%); --shadow-unified: 0 6px 18px rgba(0,0,0,.25); }
+:root{ --radius: var(--radius-lg); --mac-radius: var(--radius-lg); --mac-radius-md: var(--radius-md); --mac-radius-xl: var(--radius-xl); --win-accent: var(--accent, #1b67ff); }
+html body .topbar{ border-radius: 0 0 var(--radius-xl) var(--radius-xl); backdrop-filter: var(--backdrop); }
+html body #main .card{ backdrop-filter: var(--backdrop); }
+html body #main .img-frame{ border-radius: var(--radius-md); backdrop-filter: var(--backdrop); }
+html body #main .btn, html body #main .btn-ghost, html body #main .tabbtn, html body #main .badge{ border-radius: var(--radius-md); }
+html body #convert .input-wrap{ border-radius: 0; box-shadow: none; }
+html body #convert select, html body #convert input{ border-radius: 0; outline: none; box-shadow: none; }
+@media (max-width: 768px) { .btn, .btn-ghost { min-height: 44px; min-width: 44px; padding: 12px 18px; } .tabbtn { min-height: 48px; padding: 12px 16px; } }
+.btn, .btn-ghost{ position: relative; overflow: hidden; }
+.btn::before, .btn-ghost::before{ content:''; position:absolute; top:50%; left:50%; width:0; height:0; background: rgba(255,255,255,0.12); border-radius:50%; transform:translate(-50%,-50%); transition: width .28s ease, height .28s ease; pointer-events:none; }
+.btn:active::before, .btn-ghost:active::before{ width:280px; height:280px; }
+.pill[data-trend="up"]{ border-color: var(--good); }
+.pill[data-trend="down"]{ border-color: var(--bad); }
+@container card (min-width: 300px) { .btn-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; } }
+</style>
+<!-- STYLE:END merged-visual.css -->
+</head>
+<!-- HTML START -->
+<body><nav class="visually-hidden" id="skip-links" role="navigation"><a href="#main">Skip to main content</a></nav>
+<a class="visually-hidden" href="#main">
+   Skip to main content
+  </a>
+<!-- div #scrollProgress .scroll-progress -->
+<div aria-hidden="true" class="scroll-progress" id="scrollProgress">
+</div>
+<!-- div #liveCopy .visually-hidden (role=status) -->
+<div aria-live="polite" class="visually-hidden" id="liveCopy" role="status">
+</div>
+<!-- div #liveTabs .visually-hidden (role=status) -->
+<div aria-live="polite" class="visually-hidden" id="liveTabs" role="status">
+</div>
+<!-- div #alerts .visually-hidden (role=alert) -->
+<div aria-live="assertive" class="visually-hidden" id="alerts" role="alert">
+</div>
+<!-- div .topbar (role=navigation) -->
+<div aria-label="Primary" class="topbar" role="navigation">
+<nav role="navigation">
+<picture>
+<source srcset="assets/DogecashLogo.avif" type="image/avif"/>
+<source srcset="assets/DogecashLogo.webp" type="image/webp"/>
+<!-- img #logoImg .brand-mark (role=button) -->
+<img alt="Dogecash Logo" aria-label="Scroll to top" class="brand-mark" decoding="async" fetchpriority="high" height="64" id="logoImg" loading="lazy" role="button" src="data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%271.0%27%3F%3E%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%20aria-hidden%3D%27true%27%20role%3D%27img%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20x2%3D%271%27%20y1%3D%270%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%236bdcff%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23ffb86b%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%230b1220%27%2F%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2732%27%20r%3D%2722%27%20fill%3D%27url%28%23g%29%27%20opacity%3D%270.25%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2738%27%20font-family%3D%27system-ui%2CSegoe%20UI%2CRoboto%2CArial%27%20font-size%3D%2714%27%20text-anchor%3D%27middle%27%20fill%3D%27%23e6eef6%27%3EDOGEC%3C%2Ftext%3E%3C%2Fsvg%3E" tabindex="0" width="64"/>
+</picture>
+<div aria-label="Site" class="nav-links">
+<a href="#download">
+      Download
+     </a>
+<a href="#markets">
+      Markets
+     </a>
+<a href="#learn">
+      Learn
+     </a>
+<a href="#convert">
+      Convert
+     </a>
+<a href="#wallet">
+      Wallet
+     </a>
+<a href="#blog">
+      Updates
+     </a>
+<a class="btn-ghost" href="https://www.coinexplorer.net/DOGEC" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+  Coin Explorer
+</a><a class="cta" href="https://discord.gg/your-invite" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+      Join Discord
+     </a></div>
+<!-- button #hamburger .hamburger -->
+<button aria-controls="mobileMenu" aria-expanded="false" aria-haspopup="true" class="hamburger" id="hamburger" type="button">
+     ☰ Menu
+    </button>
+</nav>
+</div>
+<div class="header-wrap">
+<!-- header (role=banner) -->
+<header role="banner">
+<div class="branding">
+<h1>
+      DOGECASH — The Underdog Returns
+     </h1>
+<p class="muted">
+      Native blockchain coin • community-first relaunch with transparent governance.
+     </p>
+</div>
+<div class="header-actions" style="margin-left:auto">
+<span aria-live="polite" class="badge" id="versionBadge">
+      v5.5.1
+     </span>
+<label class="theme-toggle" title="Toggle theme">
+<!-- input #themeToggle (role=switch) -->
+<input aria-checked="false" aria-label="Toggle light theme" id="themeToggle" role="switch" type="checkbox"/>
+<span>
+       Light theme
+      </span>
+</label>
+</div>
+</header>
+<!-- div #mobileMenu .card -->
+<div aria-hidden="true" aria-label="Mobile" class="card" id="mobileMenu" style="display:none; margin-top:8px" tabindex="-1">
+<!-- div .btn-row (role=group) -->
+<div aria-label="Mobile navigation" class="btn-row" role="group">
+<a class="btn-ghost" href="#download">
+      Download
+     </a>
+<a class="btn-ghost" href="#convert">
+      Convert
+     </a>
+<a class="btn-ghost" href="#markets">
+      Markets
+     </a>
+<a class="btn-ghost" href="#learn">
+      Learn
+     </a>
+<a class="btn-ghost" href="#wallet">
+      Wallet
+     </a>
+<a class="btn-ghost" href="#blog">
+      Updates
+</a>
+<a class="btn-ghost" href="https://www.coinexplorer.net/DOGEC" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+  Coin Explorer
+
+</a><a class="cta" href="https://discord.gg/your-invite" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+      Join Discord
+     </a></div></div>
+</div>
+<main aria-label="Main content" id="main" role="main" tabindex="-1">
+<!-- .visually-hidden -->
+<nav aria-label="Breadcrumb" class="visually-hidden" role="navigation">
+<ol>
+<li>
+<a href="/">
+       Home
+      </a>
+</li>
+<li>
+<span aria-current="page">
+       DOGECASH — The Underdog Returns
+      </span>
+</li>
+</ol>
+</nav>
+<noscript>
+<div class="notice">
+     JavaScript is disabled — live prices/markets and some actions will show placeholders.
+    </div>
+</noscript>
+<!-- div .card (role=status) -->
+<div aria-live="polite" class="card notice" role="status">
+    Heads up: The DogeCash App ceased services; withdrawal deadlines were March 16–28, 2025.
+ See details on the official site:
+    <a href="https://dogecash.net/" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+     dogecash.net
+    </a>
+    .
+   </div>
+<!-- section #download .card (role=region) -->
+<section aria-labelledby="download-h" class="card" id="download" role="region">
+<h2 id="download-h">
+     Download DogeCash Wallet
+    </h2>
+<div class="grid-2">
+<div>
+<p class="muted">
+       Installer auto-suggested for your OS. Always verify checksums/signatures before running.
+      </p>
+<p>
+<a class="btn" href="https://github.com/dogecash/dogecash/releases/tag/5.5.1" id="dlBtn" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+        Download for Your OS
+       </a>
+</p>
+<p class="muted">
+<small>
+        All assets:
+        <a href="https://github.com/dogecash/dogecash/releases/tag/5.5.1" id="allAssetsLink" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+         GitHub Release
+        </a>
+</small>
+</p>
+<div aria-label="Quick links (downloads)" class="btn-row">
+<a class="btn-ghost" href="https://github.com/dogecash/dogecash/releases" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+        GitHub Releases
+       </a>
+<a class="btn-ghost" href="https://www.coingecko.com/en/coins/dogecash" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+        CoinGecko
+       </a>
+<a class="btn-ghost" href="https://coinmarketcap.com/currencies/dogecash/" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+        CoinMarketCap
+       </a>
+</div>
+<details>
+<summary aria-controls="shaTable" aria-expanded="false">
+<strong>
+         SHA256 Checksums
+        </strong>
+        (click a hash to copy)
+       </summary>
+<p>
+        Note: In production, validate checksums using GPG-signed release files.
+       </p>
+<!-- C037: table #shaTable .table -->
+<table aria-describedby="shaCaption" class="table" id="shaTable">
+<caption class="visually-hidden" id="shaCaption">
+         Release asset SHA256 checksums
+        </caption>
+<thead>
+<tr>
+<th scope="col">
+           File
+          </th>
+<th scope="col">
+           SHA256
+          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+           dogecash-5.5.1-win64.zip
+          </td>
+<td class="muted">
+           5E470328EE68750A2F6E86F75C83CECAEAC2AD973F5573B83DCB6E3156A91591
+          </td>
+</tr>
+<tr>
+<td>
+           dogecash-5.5.1-osx-unsigned.dmg
+          </td>
+<td class="muted">
+           A9B2E0AB2F72476CCF5CDB4746ADF9C9D1399321E8E6C02B5F6F47CC924D59B2
+          </td>
+</tr>
+<tr>
+<td>
+           dogecash-5.5.1-x86_64-linux-gnu.tar.gz
+          </td>
+<td class="muted">
+           DEAB49107E8930148E24BB922B3BEF6F009E3709D425619FF0044D121D7A02EF
+          </td>
+</tr>
+</tbody>
+</table>
+</details>
+</div>
+<div>
+<h3>
+       Live Price
+      </h3>
+<div aria-live="polite" class="kv">
+<div class="pill">
+<strong>
+         USD
+        </strong>
+<!-- div #p_usd -->
+<div id="p_usd">
+         —
+        </div>
+</div>
+<div class="pill">
+<strong>
+         24h
+        </strong>
+<!-- div #p_ch -->
+<div id="p_ch">
+         —
+        </div>
+</div>
+<div class="pill">
+<strong>
+         Market Cap
+        </strong>
+<!-- div #p_mcap -->
+<div id="p_mcap">
+         —
+        </div>
+</div>
+<div class="pill">
+<strong>
+         24h Volume
+        </strong>
+<!-- div #p_vol -->
+<div id="p_vol">
+         —
+        </div>
+</div>
+<div class="pill">
+<strong>
+         Circulating
+        </strong>
+<!-- div #p_circ -->
+<div id="p_circ">
+         —
+        </div>
+</div>
+</div>
+<p aria-atomic="true" aria-live="polite" aria-relevant="additions text" class="api-status" id="priceStatus" role="status">
+       Fetching price…
+      </p>
+<p class="muted">
+       Source: CoinGecko •
+       <a href="https://www.coingecko.com/en/coins/dogecash" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+        View on CoinGecko
+       </a>
+</p>
+</div>
+</div>
+</section>
+<!-- section #convert .card (role=region) -->
+<section aria-labelledby="convert-heading" class="card" id="convert" role="region">
+<h2 id="convert-heading">Convert Cryptocurrency</h2>
+<p class="muted">Select a cryptocurrency and fiat currency, enter an amount, and see the conversion instantly.</p>
+<!-- semantic form wrapper; no visual change -->
+<form action="#" aria-labelledby="convert-heading" method="get" novalidate="" role="form" style="margin:0; padding:0; border:0; background:transparent;">
+<div aria-label="Conversion form" class="convert-row" role="group">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 12px;">
+<div class="input-wrap" data-suffix="">
+<!-- accessible label, visually hidden -->
+<label class="visually-hidden" for="cryptoSelect">Cryptocurrency</label>
+<select aria-label="Cryptocurrency" class="btn-ghost" data-testid="crypto-select" id="cryptoSelect" name="crypto" required="">
+<option value="dogec">DOGEC</option>
+<option value="btc">BTC</option>
+<option value="eth">ETH</option>
+<option value="ltc">LTC</option>
+</select>
+<label class="visually-hidden" for="cryptoAmount">Crypto amount</label>
+<input aria-describedby="convertStatus cryptoUnit" aria-label="Enter amount" autocapitalize="none" autocomplete="off" autocorrect="off" class="btn-ghost" data-testid="crypto-amount" enterkeyhint="done" id="cryptoAmount" inputmode="decimal" max="10000000" maxlength="32" min="0" name="crypto_amount" pattern="\d+(\.\d{1,8})?" required="" step="any" title="Enter a valid number (digits with optional decimal point)" type="number"/>
+<span class="visually-hidden" id="cryptoUnit">Unit: crypto</span>
+</div>
+<div class="input-wrap" data-suffix="">
+<label class="visually-hidden" for="fiatSelect">Fiat currency</label>
+<select aria-label="Fiat currency" class="btn-ghost" data-testid="fiat-select" id="fiatSelect" name="fiat" required="">
+<option value="usd">USD</option>
+<option value="eur">EUR</option>
+<option value="gbp">GBP</option>
+<option value="cad">CAD</option>
+<option value="aud">AUD</option>
+</select>
+<label class="visually-hidden" for="fiatAmount">Fiat amount</label>
+<input aria-describedby="convertStatus fiatUnit" aria-label="Enter amount" autocapitalize="none" autocomplete="off" autocorrect="off" class="btn-ghost" data-testid="fiat-amount" enterkeyhint="done" id="fiatAmount" inputmode="decimal" max="10000000" maxlength="32" min="0" name="fiat_amount" pattern="\d+(\.\d{1,2})?" required="" step="any" title="Enter a valid number (digits with optional decimal point)" type="number"/>
+<span class="visually-hidden" id="fiatUnit">Unit: fiat</span>
+</div>
+<button aria-describedby="convertStatus" aria-label="Refresh conversion rate" class="btn" data-testid="refresh-button" id="refreshPrice" type="button">
+          Refresh Price
+        </button>
+</div>
+</div>
+<!-- This is your existing live status; unchanged visually -->
+<p aria-atomic="true" aria-live="polite" aria-relevant="additions text" class="api-status" id="convertStatus" role="status">
+      Converter ready.
+    </p>
+</form>
+<noscript>
+<p class="notice">Conversion requires JavaScript. Use a manual converter or CoinGecko.</p>
+</noscript>
+</section>
+<!-- section #share .card (role=region) -->
+<section aria-labelledby="share-heading" class="card" id="share" role="region">
+<h2 id="share-heading">
+     Share DOGECASH
+    </h2>
+<p class="muted">
+     Spread the word. Links use your current page &amp; title and respect your device’s native share where supported.
+    </p>
+<!-- div .share-row (role=group) -->
+<div aria-label="Share buttons" class="share-row" role="group">
+<a aria-label="Share on Facebook" class="btn-ghost" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdogecash.io%2F" id="share-facebook" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M22 12.06C22 6.49 17.52 2 11.95 2S2 6.49 2 12.06c0 5.01 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.19 2.24.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.91h-2.33V22c4.78-.78 8.44-4.93 8.44-9.94Z" fill="currentColor">
+</path>
+</svg>
+<span>
+       Facebook
+      </span>
+</a>
+<a aria-label="Share on X (Twitter)" class="btn-ghost" href="https://x.com/intent/post?text=Check+out+DOGECASH+%E2%80%94+DOGECASH+%E2%80%94+The+Underdog+Returns&amp;url=https%3A%2F%2Fdogecash.io%2F" id="share-twitter" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M13.8 10.7 20.9 2h-2.5l-6 7.2L8 2H2l7.6 11.2L2.6 22h2.5l6.5-7.8 4.7 7.8H22l-8.2-11.3Zm-2.3 2.8-.76-1.12L5 3.7h2.1l4.1 6 .76 1.12 6.1 8.9h-2.1l-4.46-6.02Z" fill="currentColor">
+</path>
+</svg>
+<span>
+       Share on X
+      </span>
+</a>
+<a aria-label="Open Instagram profile" class="btn-ghost" href="https://instagram.com/" id="share-instagram" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.75-3A1.25 1.25 0 1 1 16.5 7.75 1.25 1.25 0 0 1 17.75 6.5Z" fill="currentColor">
+</path>
+</svg>
+<span>
+       Instagram
+      </span>
+</a>
+<a aria-label="Open TikTok profile" class="btn-ghost" href="https://www.tiktok.com/" id="share-tiktok" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M15 3c.6 1.8 2 3.2 3.8 3.8V10a7 7 0 1 1-7-7h3.2Z" fill="currentColor">
+</path>
+</svg>
+<span>
+       TikTok
+      </span>
+</a>
+<a aria-label="Share on Telegram" class="btn-ghost" href="https://t.me/share/url?url=https%3A%2F%2Fdogecash.io%2F&amp;text=Check+out+DOGECASH+%E2%80%94+DOGECASH+%E2%80%94+The+Underdog+Returns" id="share-telegram" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M21.5 3.5 2.7 10.8c-1 .4-.9 1.8.2 2L8.7 14l8.7-7.9c.2-.2.6.1.4.3L10 15.2v4.6c0 1.1 1.3 1.6 2.1.9l3.2-2.8 3.9 1.3c.9.3 1.8-.3 2-1.2l2.3-12.6c.2-1-.7-1.8-1.6-1.5Z" fill="currentColor">
+</path>
+</svg>
+<span>
+       Telegram
+      </span>
+</a>
+<a aria-label="Share on WhatsApp" class="btn-ghost" href="https://wa.me/?text=Check+out+DOGECASH+%E2%80%94+DOGECASH+%E2%80%94+The+Underdog+Returns%20https%3A%2F%2Fdogecash.io%2F" id="share-whatsapp" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M20 3.9A10 10 0 0 0 3.6 17.6L3 21l3.5-.9A10 10 0 1 0 20 3.9Zm-8 .9a8.1 8.1 0 0 1 6.2 13.2c-.3.4-.9.5-1.4.3-.8-.3-1.8-.6-2.7-1-2.9-1.3-5.1-3.5-6.4-6.4-.4-.9-.7-1.9-1-2.7-.2-.5 0-1.1.3-1.4A8.1 8.1 0 0 1 12 4.8Z" fill="currentColor">
+</path>
+</svg>
+<span>
+       WhatsApp
+      </span>
+</a>
+</div>
+</section>
+<!-- section #markets .card (role=region) -->
+<section aria-labelledby="markets-h" class="card" id="markets" role="region">
+<h2 id="markets-h">
+     Where to Trade DOGEC (Live)
+    </h2>
+<!-- div #marketsNote .notice -->
+<div class="notice muted" id="marketsNote">
+     Data via CoinGecko tickers. Always verify liquidity, spreads, and official communities before trading. Ensure the pair symbol is DOGEC (not DOGE). Not financial advice.
+    </div>
+<div aria-label="Quick links (markets)" class="btn-row">
+<a class="btn" href="https://stakecube.net/app/exchange/dogec_btc" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+      StakeCube: DOGEC/BTC
+     </a>
+<a class="btn-ghost" href="https://www.coingecko.com/en/coins/dogecash#markets" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+      CoinGecko Markets
+     </a>
+<a class="btn-ghost" href="https://coinmarketcap.com/currencies/dogecash/markets/" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+      CMC Markets
+     </a>
+</div>
+<div class="table-container">
+<!-- table #marketsTable .table -->
+<table aria-describedby="marketsNote" class="table" id="marketsTable">
+<caption class="visually-hidden">
+       Live market pairs from CoinGecko
+      </caption>
+<thead>
+<tr>
+<th scope="col">
+         Exchange
+        </th>
+<th scope="col">
+         Pair
+        </th>
+<th scope="col">
+         Price
+        </th>
+<th scope="col">
+         Spread
+        </th>
+<th scope="col">
+         Trust
+        </th>
+<th scope="col">
+         Link
+        </th>
+</tr>
+</thead>
+<tbody aria-busy="true">
+<tr>
+<td class="muted" colspan="6" role="rowheader">
+         Loading live markets…
+        </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="muted">
+<noscript>
+      Markets unavailable without JavaScript.
+     </noscript>
+</div>
+<p aria-atomic="true" aria-live="polite" aria-relevant="additions text" class="api-status" id="marketsStatus" role="status">
+     Fetching markets…
+    </p>
+<noscript>
+<p class="notice">
+      Live markets require JavaScript. See
+      <a href="https://www.coingecko.com/en/coins/dogecash#markets" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+       CoinGecko Markets
+      </a>
+      .
+     </p>
+</noscript>
+</section>
+<!-- section #wallet .card (role=region) -->
+<section aria-labelledby="wallet-h" class="card" id="wallet" role="region">
+<h2 id="wallet-h">
+     Wallet Preview
+    </h2>
+<div class="grid-2">
+<div class="img-frame">
+<!-- img #walletImg -->
+<img alt="Dogecash Desktop Wallet Preview" decoding="async" fetchpriority="low" height="768" id="walletImg" loading="lazy" src="assets/DogecashWalletPreview.png" width="1365"/>
+</div>
+<div>
+<ul>
+<li>
+<strong>
+         Proof-of-Stake
+        </strong>
+        with unlock-for-staking-only
+       </li>
+<li>
+<strong>
+         Masternodes
+        </strong>
+        &amp; DAO voting
+       </li>
+<li>
+<strong>
+         Transaction history
+        </strong>
+        with filters &amp; memos
+       </li>
+<li>
+<strong>
+         Backups
+        </strong>
+        &amp; wallet encryption
+       </li>
+<li>
+<strong>
+         Diagnostics
+        </strong>
+        &amp; version info
+       </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- section #specs .card (role=region) -->
+<section aria-labelledby="specs-h" class="card" id="specs" role="region">
+<h2 id="specs-h">
+     Coin Specifications
+    </h2>
+<div class="grid-3">
+<div class="pill">
+<strong>
+       Algorithm
+      </strong>
+<div>
+       Quark
+      </div>
+</div>
+<div class="pill">
+<strong>
+       Block Time
+      </strong>
+<div>
+       ~60 sec
+      </div>
+</div>
+<div class="pill">
+<strong>
+       Difficulty
+      </strong>
+<div>
+       Retarget every block
+      </div>
+</div>
+<div class="pill">
+<strong>
+       Total Supply
+      </strong>
+<div>
+       21,000,000 DOGEC
+      </div>
+</div>
+<div class="pill">
+<strong>
+       Max Supply
+      </strong>
+<div>
+       210,000,000 DOGEC
+      </div>
+</div>
+<div class="pill">
+<strong>
+       Privacy
+      </strong>
+<div>
+       SHIELD (zk-SNARKs)
+      </div>
+</div>
+</div>
+<p class="muted">
+     Circulating supply is ~18.8M (live via dashboard/CG).
+    </p>
+</section>
+<!-- section #learn .card (role=region) -->
+<section aria-labelledby="learn-h" class="card" id="learn" role="region">
+<h2 id="learn-h">
+     Learn DOGEC
+    </h2>
+<!-- div #learnTabs .tabs (role=tablist) -->
+<div aria-label="Learn sections" aria-orientation="horizontal" class="tabs" id="learnTabs" role="tablist">
+<!-- button #tab-tech .tabbtn (role=tab) -->
+<button aria-controls="tech" aria-selected="true" class="tabbtn active" data-tab="tech" id="tab-tech" role="tab" type="button">
+      Technology
+     </button>
+<!-- button #tab-staking .tabbtn (role=tab) -->
+<button aria-controls="staking" aria-selected="false" class="tabbtn" data-tab="staking" id="tab-staking" role="tab" type="button">
+      Staking
+     </button>
+<!-- button #tab-masternodes .tabbtn (role=tab) -->
+<button aria-controls="masternodes" aria-selected="false" class="tabbtn" data-tab="masternodes" id="tab-masternodes" role="tab" type="button">
+      Masternodes
+     </button>
+<!-- button #tab-gov .tabbtn (role=tab) -->
+<button aria-controls="gov" aria-selected="false" class="tabbtn" data-tab="gov" id="tab-gov" role="tab" type="button">
+      Governance
+     </button>
+<!-- button #tab-econ .tabbtn (role=tab) -->
+<button aria-controls="econ" aria-selected="false" class="tabbtn" data-tab="econ" id="tab-econ" role="tab" type="button">
+      Economics
+     </button>
+<!-- button #tab-roadmap .tabbtn (role=tab) -->
+<button aria-controls="roadmap" aria-selected="false" class="tabbtn" data-tab="roadmap" id="tab-roadmap" role="tab" type="button">
+      Roadmap
+     </button>
+<!-- button #tab-faq .tabbtn (role=tab) -->
+<button aria-controls="faq" aria-selected="false" class="tabbtn" data-tab="faq" id="tab-faq" role="tab" type="button">
+      FAQ
+     </button>
+<!-- button #tab-whitepaper .tabbtn (role=tab) -->
+<button aria-controls="whitepaper" aria-selected="false" class="tabbtn" data-tab="whitepaper" id="tab-whitepaper" role="tab" type="button">
+      White Paper
+     </button>
+</div>
+<!-- div #tech .panel (role=tabpanel) -->
+<div aria-hidden="false" aria-labelledby="tab-tech" class="panel active" id="tech" role="tabpanel" tabindex="0">
+<div class="grid-2">
+<div>
+<h3>
+        Privacy &amp; Protocol
+       </h3>
+<ul>
+<li>
+<strong>
+          SHIELD (Sapling/zk-SNARKs):
+         </strong>
+         optional privacy for amounts &amp; receivers.
+        </li>
+<li>
+<strong>
+          Consensus:
+         </strong>
+         Proof-of-Stake v3 with ~60s blocks.
+        </li>
+<li>
+<strong>
+          Network:
+         </strong>
+         Full nodes + Masternodes provide services and resilience.
+        </li>
+<li>
+<strong>
+          Wallet:
+         </strong>
+         Qt desktop with encrypt/backup, unlock-for-staking, rich history.
+        </li>
+</ul>
+</div>
+<div>
+<h3>
+        Developer Stack
+       </h3>
+<ul>
+<li>
+         Core C++/Qt:
+         <a href="https://github.com/dogecash/dogecash" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+          dogecash/dogecash
+         </a>
+</li>
+<li>
+         Explorer (JS+Mongo):
+         <a href="https://github.com/dogecash/dogecash-explorer" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+          dogecash-explorer
+         </a>
+</li>
+<li>
+         Web Wallet:
+         <a href="https://github.com/dogecash/dogecash-web-wallet" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+          dogecash-web-wallet
+         </a>
+</li>
+<li>
+         Electrum Server (Rust):
+         <a href="https://github.com/dogecash/electrs-dogecash" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+          electrs-dogecash
+         </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- #staking .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-staking" class="panel" id="staking" role="tabpanel" tabindex="-1">
+<div class="grid-2">
+<div>
+<h3>
+        How Staking Works
+       </h3>
+<ul>
+<li>
+         Encrypt wallet → Unlock
+         <strong>
+          for staking only
+         </strong>
+         .
+        </li>
+<li>
+         Keep wallet online &amp; fully synced; rewards are probabilistic.
+        </li>
+<li>
+         Coins must mature; moving coins resets coin-age.
+        </li>
+</ul>
+</div>
+<div>
+<h3>
+        Checklist
+       </h3>
+<ul>
+<li>
+         ✔ Full sync
+        </li>
+<li>
+         ✔ Backup
+         <code>
+          wallet.dat
+         </code>
+</li>
+<li>
+         ✔ Staking icon active
+        </li>
+<li>
+         ✔ Stable connection
+        </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- div #masternodes .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-masternodes" class="panel" id="masternodes" role="tabpanel" tabindex="-1">
+<div class="grid-2">
+<div>
+<h3>
+        What They Do
+       </h3>
+<ul>
+<li>
+         Provide network services &amp; governance voting.
+        </li>
+<li>
+         Improve uptime and stability.
+        </li>
+</ul>
+</div>
+<div>
+<h3>
+        High-Level Setup
+       </h3>
+<ol>
+<li>
+         Prepare collateral address in controller wallet.
+        </li>
+<li>
+         Run
+         <code>
+          dogecashd
+         </code>
+         on a VPS with static IP.
+        </li>
+<li>
+         Create
+         <code>
+          masternode.conf
+         </code>
+         , start from controller wallet.
+        </li>
+<li>
+         Monitor with
+         <code>
+          dogecash-cli masternode status
+         </code>
+         .
+        </li>
+</ol>
+</div>
+</div>
+</div>
+<!-- div #gov .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-gov" class="panel" id="gov" role="tabpanel" tabindex="-1">
+<div class="grid-2">
+<div>
+<h3>
+        DAO Process
+       </h3>
+<ul>
+<li>
+         Publish proposals (scope/budget/milestones).
+        </li>
+<li>
+         Masternodes vote on-chain.
+        </li>
+<li>
+         Treasury pays approved work.
+        </li>
+</ul>
+</div>
+<div>
+<h3>
+        Transparency Rules
+       </h3>
+<ul>
+<li>
+         Community multisig treasury wallets.
+        </li>
+<li>
+         Monthly public reports &amp; signer rotation.
+        </li>
+<li>
+         Open notes &amp; GitHub issues for proposals.
+        </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- div #econ .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-econ" class="panel" id="econ" role="tabpanel" tabindex="-1">
+<div class="grid-2">
+<div>
+<h3>
+        Specs
+       </h3>
+<ul>
+<li>
+         Algorithm: Quark • Block time: ~60s
+        </li>
+<li>
+         Difficulty: retarget per block
+        </li>
+<li>
+         Total supply: 21,000,000 DOGEC
+        </li>
+<li>
+         Max supply: 210,000,000 DOGEC
+        </li>
+</ul>
+</div>
+<div>
+<h3>
+        Incentives
+       </h3>
+<ul>
+<li>
+         Staking rewards for online, unlocked wallets.
+        </li>
+<li>
+         Masternode rewards for uptime + governance.
+        </li>
+<li>
+         DAO budget funds growth &amp; infrastructure.
+        </li>
+</ul>
+</div>
+</div>
+<p class="muted">
+      Circulating supply ~18.8M (live via dashboard/CG).
+     </p>
+</div>
+<!-- div #roadmap .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-roadmap" class="panel" id="roadmap" role="tabpanel" tabindex="-1">
+<div class="grid-2">
+<div>
+<h3>
+        Q3–Q4 2025
+       </h3>
+<ul>
+<li>
+         Public block explorer &amp; API endpoints
+        </li>
+<li>
+         Discord/X tipping bots
+        </li>
+<li>
+         Community multisig treasury
+        </li>
+<li>
+         Re-listing push on vetted exchanges/DEX bridges
+        </li>
+</ul>
+</div>
+<div>
+<h3>
+        2026
+       </h3>
+<ul>
+<li>
+         SHIELD UX hardening &amp; audits
+        </li>
+<li>
+         Wallet UX: auto-updates, recovery flows
+        </li>
+<li>
+         Mobile light clients (Electrum)
+        </li>
+</ul>
+</div>
+</div>
+<p class="muted">
+      Roadmap is community-driven via DAO votes.
+     </p>
+</div>
+<!-- div #faq .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-faq" class="panel" id="faq" role="tabpanel" tabindex="-1">
+<details>
+<summary>
+<strong>
+        Is DogeCash a token?
+       </strong>
+</summary>
+<p>
+       No — DOGEC is a native coin with its own blockchain (not an ERC-20 token).
+      </p>
+</details>
+<details>
+<summary>
+<strong>
+        Where do I get the wallet?
+       </strong>
+</summary>
+<p>
+       From the official GitHub releases. Use the OS auto-detect button and verify SHA256.
+      </p>
+</details>
+<details>
+<summary>
+<strong>
+        How do I stake?
+       </strong>
+</summary>
+<p>
+       Encrypt, then unlock “for staking only,” keep the wallet online and synced.
+      </p>
+</details>
+<details>
+<summary>
+<strong>
+        How is the treasury protected?
+       </strong>
+</summary>
+<p>
+       Community multisig, public reports, open voting, and no single-party custody.
+      </p>
+</details>
+</div>
+<!-- div #whitepaper .panel (role=tabpanel) -->
+<div aria-hidden="true" aria-labelledby="tab-whitepaper" class="panel" id="whitepaper" role="tabpanel" tabindex="-1">
+<div class="grid-2">
+<div>
+<h3>
+        DogeCash White Paper
+       </h3>
+<p>
+        View the complete DogeCash white paper below or download it for offline reading.
+       </p>
+<p>
+<a class="btn" href="DogeCash_WhitePaper.pdf" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+         Download PDF
+        </a>
+</p>
+</div>
+<div>
+<!-- iframe .whitepaper-frame -->
+<iframe class="whitepaper-frame" height="500" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-same-origin" src="DogeCash_WhitePaper.pdf" title="DogeCash White Paper" width="100%">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- section #start-here .card (role=region) -->
+<section aria-labelledby="start-here-h" class="card" id="start-here" role="region">
+<h2 id="start-here-h">
+     Start Here
+    </h2>
+<ol class="gs-steps">
+<li>
+<h3>
+       1) Download the Wallet
+      </h3>
+<p>
+       Use the button above (“Download for Your OS”).
+      </p>
+</li>
+<li>
+<h3>
+       2) Verify the Checksum
+      </h3>
+<details>
+<summary>
+        Show commands for Windows / macOS / Linux
+       </summary>
+<div class="grid-3">
+<div>
+<strong>
+          Windows (PowerShell)
+         </strong>
+<pre><code>Get-FileHash .\dogecash-5.5.1-win64.zip -Algorithm SHA256</code></pre>
+</div>
+<div>
+<strong>
+          macOS
+         </strong>
+<pre><code>shasum -a 256 dogecash-5.5.1-osx-unsigned.dmg</code></pre>
+</div>
+<div>
+<strong>
+          Linux
+         </strong>
+<pre><code>sha256sum dogecash-5.5.1-x86_64-linux-gnu.tar.gz</code></pre>
+</div>
+</div>
+<p class="muted">
+        Compare output with the hashes in the Downloads section.
+       </p>
+</details>
+</li>
+<li>
+<h3>
+       3) Get Your First DOGEC
+      </h3>
+<p>
+       Acquire on a listed exchange (see Markets), then withdraw to your wallet.
+      </p>
+</li>
+<li>
+<h3>
+       4) Stake or Run a Masternode
+      </h3>
+<p>
+       Open the wallet → Encrypt → Unlock
+       <em>
+        for staking only
+       </em>
+       . For masternodes, follow the Learn → Masternodes setup.
+      </p>
+</li>
+</ol>
+</section>
+<!-- section #tutorials .card (role=region) -->
+<section aria-labelledby="tutorials-h" class="card" id="tutorials" role="region">
+<h2 id="tutorials-h">
+     Video Tutorials
+    </h2>
+<div class="grid-2">
+<div class="tutorial-card">
+<img alt="Tutorial coming soon: Install &amp; Verify" class="ph" decoding="async" loading="lazy" src="assets/tutorial-install.svg"/>
+<div class="bar">
+<span>
+        Install &amp; Verify
+       </span>
+<!-- button .btn-mini -->
+<button class="btn-mini" data-tutorial="install" type="button">
+        Play
+       </button>
+</div>
+</div>
+<div class="tutorial-card">
+<img alt="Tutorial coming soon: Staking Basics" class="ph" decoding="async" loading="lazy" src="assets/tutorial-stake.svg"/>
+<div class="bar">
+<span>
+        Staking Basics
+       </span>
+<!-- button .btn-mini -->
+<button class="btn-mini" data-tutorial="stake" type="button">
+        Play
+       </button>
+</div>
+</div>
+</div>
+<p class="muted">
+     Videos coming soon. For now, the buttons show a quick note.
+    </p>
+</section>
+<!-- section #memes .card (role=region) -->
+<section aria-labelledby="memes-h" class="card" id="memes" role="region">
+<h2 id="memes-h">
+     Community Memes
+    </h2>
+<p class="muted">
+     Want your meme featured? Share it in Discord — we periodically add the best here.
+    </p>
+<!-- div #memeGrid .meme-grid -->
+<div aria-live="polite" class="meme-grid" id="memeGrid">
+</div>
+</section>
+<!-- section #blog .card (role=region) -->
+<section aria-labelledby="blog-h" class="card" id="blog" role="region">
+<h2 id="blog-h">
+     Blog &amp; Updates
+    </h2>
+<!-- div #blogList .blog-list -->
+<div class="blog-list" id="blogList">
+<div class="muted">
+      Loading posts…
+     </div>
+<noscript>
+      Blog unavailable without JavaScript.
+     </noscript>
+</div>
+<p aria-atomic="true" aria-live="polite" aria-relevant="additions text" class="api-status" id="blogStatus" role="status">
+     Fetching posts…
+    </p>
+</section>
+</main>
+<!-- footer -->
+<footer aria-label="Site footer" role="contentinfo">
+<p>
+<!-- img #tinyLogo .tiny -->
+<img alt="Dogecash logo" class="tiny" decoding="async" height="18" id="tinyLogo" loading="lazy" src="data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%271.0%27%3F%3E%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%20aria-hidden%3D%27true%27%20role%3D%27img%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20x2%3D%271%27%20y1%3D%270%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%236bdcff%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23ffb86b%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%230b1220%27%2F%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2732%27%20r%3D%2722%27%20fill%3D%27url%28%23g%29%27%20opacity%3D%270.25%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2738%27%20font-family%3D%27system-ui%2CSegoe%20UI%2CRoboto%2CArial%27%20font-size%3D%2714%27%20text-anchor%3D%27middle%27%20fill%3D%27%23e6eef6%27%3EDOGEC%3C%2Ftext%3E%3C%2Fsvg%3E" width="18"/>
+    Join the community:
+    <a href="https://discord.gg/your-invite" referrerpolicy="no-referrer" rel="noopener noreferrer" target="_blank">
+     Discord
+    </a>
+</p>
+<p class="muted">
+    ©
+    <span id="year">
+     2025
+    </span>
+    DogeCash Community — Always verify downloads and addresses before transacting.
+   </p>
+<div style="text-align:left; margin:16px auto; max-width: 1000px">
+<!-- details #legal-disclaimers .notice -->
+<details class="notice" id="legal-disclaimers" open="">
+<summary>
+<strong>
+       Legal &amp; Disclaimers
+      </strong>
+</summary>
+<p>
+<strong>
+       Legal Notice.
+      </strong>
+      This website is provided for informational purposes only and does
+      <em>
+       not
+      </em>
+      constitute financial, investment, legal, or tax advice, and is
+      <em>
+       not
+      </em>
+      an offer to sell or a solicitation of an offer to buy any security, commodity, or financial instrument. Digital assets are volatile and may lose value. Do your own research and consult qualified professionals. Access to this site may be restricted by law in certain jurisdictions; you are responsible for compliance with local rules.
+     </p>
+<p>
+<strong>
+       Third‑Party Links.
+      </strong>
+      Links to exchanges, APIs, wallets, and social platforms are provided for convenience. We do not control, endorse, or assume responsibility for any third‑party content, services, or risks. Trading or transacting through third parties is at your own risk. Always verify that exchange pairs reference
+      <strong>
+       DOGEC
+      </strong>
+      (and not
+      <strong>
+       DOGE
+      </strong>
+      ).
+     </p>
+<p>
+<strong>
+       Affiliations &amp; Trademarks.
+      </strong>
+      DogeCash is
+      <em>
+       not affiliated
+      </em>
+      with Dogecoin®, Discord®, Microsoft®, Apple®, CoinGecko®, Brave®, or any other referenced brands. All trademarks are the property of their respective owners. “Inspired by” visual references are descriptive only and do not imply endorsement.
+     </p>
+<p>
+<strong>
+       Privacy.
+      </strong>
+      This site stores minimal settings locally (e.g., theme preference via
+      <code>
+       localStorage
+      </code>
+      ) and fetches public market data from CoinGecko. We do not collect personal information through this site. When you use sharing links or visit third‑party sites, their privacy policies apply.
+     </p>
+<p>
+<strong>
+       Accuracy.
+      </strong>
+      Market prices, supplies, and other metrics shown here are approximate and may change. Sources include CoinGecko and public blockchain explorers. Verify independently before acting.
+     </p>
+<p>
+<strong>
+       Community Content.
+      </strong>
+      If/when user submissions are enabled (e.g., memes), submitters must hold necessary rights. For takedowns, contact community moderators via Discord.
+     </p>
+</details>
+<p class="muted">
+<em>
+      DogeCash is not affiliated with Dogecoin®.
+     </em>
+</p>
+</div>
+<address class="visually-hidden">
+    Contact: community@dogecash.io
+   </address>
+</footer>
+
+<script type="module" src="utils.js" integrity="sha384-Qf0SSBV6YyMdy0yiKnPCcCmgn1IBNv/0RRMK9Rx/Sfkiz6YsDlr53r+H7rv2l0Eh" crossorigin="anonymous"></script>
+<script type="module" src="converter.js" integrity="sha384-eASpGlZjVG90g2UxXjM1PwysxY4yIrSWCh6D17KVwUc2j4qK6ZS9albMw2kSlKPf" crossorigin="anonymous"></script>
+<script type="module" src="markets.js" integrity="sha384-2IypGRX3GnS+CnWVB60sVcbdnUoxaDQzvDkjlI7KF3Yiw9bzGesQZQI5r+D/cq6w" crossorigin="anonymous"></script>
+<script type="module" src="main.js" integrity="sha384-XmdE8wHXNgfguWFHfLVfrjOkDC6KOJJkHkXpMAk7hUjygkDejfJFw8EeCfe511SY" crossorigin="anonymous"></script>
+</body>
+</html>
+
