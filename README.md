@@ -1,6 +1,6 @@
 # DogeCash Community Enterprise Web App
 
-**Status:** Production Ready • **License:** MIT
+**Status:** Production Ready Almost • **License:** MIT
 
 Modern, secure, accessible, static web app that displays DogeCash prices and market data (CoinGecko).
 - WCAG 2.1 AAA a11y
